@@ -2,13 +2,11 @@ time = int(input ("Time Spent = "))
 acc = int(input ("Acceleration = "))
 dist = int(input ("Distance = "))
 velocity = time * acc
-dist_sec = 0
 s = (1/2)*acc*time*time
-star = 0
 
 for i in range (0, time + 1) :
     dist_sec = (1 / 2) * acc * i * i
-    star = int(dist_sec//10)
+    star = int(dist_sec/10)
     print("Duration: ", i,"Distance: ", "*" * star)
 
 #final velocity
